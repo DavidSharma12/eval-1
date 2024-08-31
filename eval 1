@@ -1,0 +1,32 @@
+
+1
+def ADDTASK(name,ID,taskstatus):
+    dict[name]=[name,ID,taskstatus]
+
+2
+def UPDATETASK(name,ID,taskstatus):
+    dict[name]=[name,ID,taskstatus]
+3
+def DELETETASK(name):
+    for key in dict:
+        if(dict[k][0][0]==name):
+            dict.pop(key);
+4
+def DISPLAYID():
+    for y in dict:
+        print(y,dict[y][0][0]);
+5
+UPDATETASK('DECISIOM',100025,'done')
+DISPLAYID()
+6
+def SEARCHWITHEND(name_char):
+    for m in dict:
+        if(dict[-1]==name_char):
+            print(m,dict[m])
+NOW FOR ALL ADD STATEMENTS
+ADDTASK('FETCH',100023,'fetching')
+ADDTASK('EXECUTE',100024,'executing')
+ADDTASK('DECISION',100025,'waiting')
+ADDTASK('DECODE',100026,'completed')
+DISPLAYID()
+
